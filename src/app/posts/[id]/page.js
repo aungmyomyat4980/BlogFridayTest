@@ -22,8 +22,9 @@ const Post = () => {
         return <div>Error: {error.message}</div>;
     }
 
-    const {id} = useParams()
+    const id = Number(useParams().id);
 
+    if (id >= 1 && id <= posts.length) {
     return (
         <div className='flex flex-col items-center w-full h-screen'>
             <div className='max-w-5xl w-full h-32 flex flex-col mt-10 px-5'>
@@ -54,7 +55,7 @@ const Post = () => {
                 </div>
             </div>
         </div>
-    );
+    )}
 };
 
 export default Post;

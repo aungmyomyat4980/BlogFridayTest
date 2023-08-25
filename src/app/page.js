@@ -10,12 +10,14 @@ import {useRouter} from "next/navigation";
 import axios from "axios";
 import {useQuery} from "@tanstack/react-query";
 
+
 export default function Home() {
+    const router = useRouter()
     useEffect(() => {
         router.prefetch('/posts');
-    }, []);
+    }, [router]);
 
-    const router = useRouter()
+
     const fetchPosts = async () => {
         const response = await axios.get('http://localhost:3000/posts');
         return response.data;
