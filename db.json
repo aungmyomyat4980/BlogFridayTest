@@ -1,0 +1,18 @@
+{
+  "authors" : [
+    {
+      "id" :"",
+      "name" : "",
+      "image" : ""
+    }
+  ],
+  "posts" : [
+    {
+      "id" : "",
+      "title" : "",
+      "content" : "",
+      "date" : "",
+      "coverPhoto" : ""
+    }
+  ]
+}

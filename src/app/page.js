@@ -42,7 +42,6 @@ export default function Home() {
           {/*News Div*/}
           <div className='mt-8 md:mr-4'>
               <Image src={Cover3} alt='' className='h-52 mb-2 px-3'/>
-              <div className='sm:grid sm:grid-cols-2'>
                   <div className='px-4 flex flex-col sm:mt-3'>
                       <span className='text-2xl font-semibold mb-3'>Learn How to Pre-render Pages Using Static Generation with Next.js</span>
                       <span>March 16, 2020</span>
@@ -56,14 +55,11 @@ export default function Home() {
                           <span className='font-bold text-lg ml-2 mt-2'>Angela Gray</span>
                       </div>
                   </div>
-              </div>
-
           </div>
 
           {/*News Div*/}
           <div className='mt-8 pb-32 md:ml-4'>
               <Image src={Cover} alt='' className='h-52 mb-2 px-3'/>
-              <div className='sm:grid sm:grid-cols-2'>
                   <div className='px-4 flex flex-col sm:mt-3'>
                       <span className='text-2xl font-semibold mb-3'>Preview Mode for Static Generation</span>
                       <span>March 16, 2020</span>
@@ -77,7 +73,7 @@ export default function Home() {
                           <span className='font-bold text-lg ml-2 mt-2'>Joe</span>
                       </div>
                   </div>
-              </div>
+
           </div>
           </div>
 
