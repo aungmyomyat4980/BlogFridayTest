@@ -26,7 +26,7 @@ const Post = () => {
 
     return (
         <div className='flex flex-col items-center w-full h-screen'>
-            <div className='max-w-4xl w-full h-32 flex flex-col mt-10'>
+            <div className='max-w-5xl w-full h-32 flex flex-col mt-10 px-5'>
                 <div>
                     <span className='text-3xl font-bold'>Blog.</span>
                 </div>
