@@ -7,6 +7,8 @@ import Cover2 from "@/image/cover (2).jpg";
 import Image from "next/image";
 
 const Post = () => {
+    const { id } = useParams(); // Call useParams unconditionally
+    const postId = Number(id);
     const fetchPosts = async () => {
         const response = await axios.get('http://localhost:3000/posts');
         return response.data;
@@ -22,9 +24,7 @@ const Post = () => {
         return <div>Error: {error.message}</div>;
     }
 
-    const id = Number(useParams().id);
-
-    if (id >= 1 && id <= posts.length) {
+    if (postId >= 1 && postId <= posts.length) {
     return (
         <div className='flex flex-col items-center w-full h-screen'>
             <div className='max-w-5xl w-full h-32 flex flex-col mt-10 px-5'>
